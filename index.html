@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16945653965"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16945653965');
+</script>
+
+
+<!-- Event snippet for gett conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16945653965/hsXjCKCW-68aEM3RqJA_',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación Humana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1A2A44;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        .verification-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .verify-button {
+            background: #66D7EB;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1A2A44;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 20px rgba(102, 215, 235, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .verify-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(102, 215, 235, 0.5);
+        }
+        
+        .verify-button:active {
+            transform: scale(0.98);
+            box-shadow: 0 4px 10px rgba(102, 215, 235, 0.2);
+        }
+        
+        .robot-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .verification-container {
+                padding: 30px;
+                width: 90%;
+            }
+                
+            .verify-button {
+                font-size: 18px;
+                padding: 15px 30px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="verification-container">
+        <div class="robot-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <h1>Verificación Humana</h1>
+        <a onclick="return gtag_report_conversion('https://spectraxro.com/mWvcrnDW?utm_campaign=kms_panama');" href="https://spectraxro.com/mWvcrnDW?utm_campaign=kms_panama">
+            <button class="verify-button">Confirme que no es un robot</button>
+        </a>
+    </div>
+</body>
+</html>
